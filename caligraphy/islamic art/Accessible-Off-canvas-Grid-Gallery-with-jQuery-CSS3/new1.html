@@ -1,0 +1,361 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>products</title>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<style>
+* { box-sizing: boder-box; }
+
+body { margin: 0; }
+
+#main {
+  position: relative;
+  z-index: 20;
+  background: #fff;
+  -webkit-transition: -webkit-transform .6s ease;
+  transition: transform .6s ease;
+}
+@media (min-width: 640px) {
+
+#main { padding: 1em; }
+}
+
+.fake-section {
+  background: #eee;
+  height: 300px;
+}
+
+.tiles-a {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.tiles-a ul {
+  margin: 0;
+  padding: 0;
+}
+
+.tiles-a li { list-style: none; }
+@media (min-width: 640px) {
+
+.tiles-a li {
+  float: left;
+  width: 33.33%;
+}
+}
+
+.tiles-a a {
+  margin: 1em;
+  display: block;
+  background: #222;
+  padding-top: 73%;
+  height: 0;
+}
+
+#aside {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background: #eee;
+  overflow-y: scroll;
+  z-index: 10;
+}
+
+#aside img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+#aside .wrapper { padding: 1em; }
+
+#aside .close {
+  width: 25px;
+  display: block;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.show-detail { overflow: hidden; }
+
+.show-detail #main {
+  -webkit-transform: translateX(-60%);
+  -ms-transform: translateX(-60%);
+  transform: translateX(-60%);
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+</style>
+</head>
+
+<body>
+<main role="main" id="main">
+  <section class="tiles-a">
+    <ul>
+      <li> <a href="#" style="background: url('k8.jpg'); background-size: cover;" aria-controls="aside" aria-expanded="false">
+        <div class="details visually-hidden"> <img src="k8.jpg">
+          <div class="text-copy wrapper">
+            <h3>kufic</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+          </div>
+        </div>
+        </a> </li>
+      <li> <a href="#" style="background: url('k9.jpg'); background-size: cover;" aria-controls="aside" aria-expanded="false">
+        <div class="details visually-hidden"> <img src="k9.jpg">
+          <div class="text-copy wrapper">
+            <h3>kufic</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+          </div>
+        </div>
+        </a> </li>
+      <li> <a href="#" style="background: url('k10.jpeg'); background-size: cover;" aria-controls="aside" aria-expanded="false">
+        <div class="details visually-hidden"> <img src="k10.jpeg">
+          <div class="text-copy wrapper">
+            <h3>kufic</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+          </div>
+        </div>
+        </a> </li>
+      <li> <a href="#" style="background: url('k11.jpg'); background-size: cover;" aria-controls="aside" aria-expanded="false">
+        <div class="details visually-hidden"> <img src="k11.jpg">
+          <div class="text-copy wrapper">
+            <h3>kufic</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+          </div>
+        </div>
+        </a> </li>
+    
+      <li> <a href="#" style="background: url('k1.jpg'); background-size: cover;" aria-controls="aside" aria-expanded="false">
+        <div class="details visually-hidden"> <img src="k1.jpg" alt="Manhattan">
+          <div class="text-copy wrapper">
+            <h3>kufic</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+          </div>
+        </div>
+        </a> </li>
+      <li> <a href="#" style="background: url('k3.jpg'); background-size: cover;" aria-controls="aside" aria-expanded="false">
+        <div class="details visually-hidden"> <img src="k3.jpg" alt="Large bridge">
+          <div class="text-copy wrapper">
+            <h3>naskh</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+          </div>
+        </div>
+        </a> </li>
+      <li> <a href="#" style="background: url('k4.jpg'); background-size: cover;" aria-controls="aside" aria-expanded="false">
+        <div class="details visually-hidden"> <img src="k4.jpg" alt="Large bridge">
+          <div class="text-copy wrapper">
+            <h3>naskh</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+          </div>
+        </div>
+        </a> </li>
+      <li> <a href="#" style="background: url('k2.jpg'); background-size: cover;" aria-controls="aside" aria-expanded="false">
+        <div class="details visually-hidden"> <img src="k2.jpg" alt="Goat-like animal">
+          <div class="text-copy wrapper">
+            <h3>naskh</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+          </div>
+        </div>
+        </a> </li>
+        <li> <a href="#" style="background: url('k12.jpg'); background-size: cover;" aria-controls="aside" aria-expanded="false">
+          <div class="details visually-hidden"> <img src="k12.jpg" alt="Goat-like animal">
+            <div class="text-copy wrapper">
+              <h3>thuluth</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+            </div>
+          </div>
+          </a> </li>
+          <li> <a href="#" style="background: url('k13.jpg'); background-size: cover;" aria-controls="aside" aria-expanded="false">
+            <div class="details visually-hidden"> <img src="k13.jpg" alt="Goat-like animal">
+              <div class="text-copy wrapper">
+                <h3>thuluth</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+              </div>
+            </div>
+            </a> </li>
+            <li> <a href="#" style="background: url('k14.jpg'); background-size: cover;" aria-controls="aside" aria-expanded="false">
+              <div class="details visually-hidden"> <img src="k14.jpg" alt="Goat-like animal">
+                <div class="text-copy wrapper">
+                  <h3>Cthuluth</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+                </div>
+              </div></a></li>
+              <li> <a href="#" style="background: url('k15.jpg'); background-size: cover;" aria-controls="aside" aria-expanded="false">
+                <div class="details visually-hidden"> <img src="k15.jpg" alt="Goat-like animal">
+                  <div class="text-copy wrapper">
+                    <h3>modern</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+                  </div>
+                </div></a></li>
+                <li> <a href="#" style="background: url('k16.jpg'); background-size: cover;" aria-controls="aside" aria-expanded="false">
+                  <div class="details visually-hidden"> <img src="k16.jpg" alt="Goat-like animal">
+                    <div class="text-copy wrapper">
+                      <h3>modern</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+                    </div>
+                  </div></a></li>
+                  <li> <a href="#" style="background: url('k17.jpg'); background-size: cover;" aria-controls="aside" aria-expanded="false">
+                    <div class="details visually-hidden"> <img src="k17.jpg" alt="Goat-like animal">
+                      <div class="text-copy wrapper">
+                        <h3>modern/h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+                      </div>
+                    </div></a></li>
+                    <li> <a href="#" style="background: url('k18.jpg'); background-size: cover;" aria-controls="aside" aria-expanded="false">
+                      <div class="details visually-hidden"> <img src="k18.jpg" alt="Goat-like animal">
+                        <div class="text-copy wrapper">
+                          <h3>naskh</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+                        </div>
+                      </div></a></li>
+                      <li> <a href="#" style="background: url('k19.jpg'); background-size: cover;" aria-controls="aside" aria-expanded="false">
+                        <div class="details visually-hidden"> <img src="k19.jpg" alt="Goat-like animal">
+                          <div class="text-copy wrapper">
+                            <h3>thuluth</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex porro tempore, rerum ullam quae rem tenetur officiis eveniet voluptate reprehenderit quibusdam maiores nihil nam, sequi molestias explicabo non quos. Deserunt.</p>
+                          </div>
+                        </div></a></li>
+    </ul>
+  </section>
+</main> 
+<aside role="complementary" id="aside" aria-hidden="true" aria-expanded="false"> <a href="#" class="close"><img src="close.svg" alt="Close button"><span class="visually-hidden">Return to main content</span></a>
+  <div class="aside--details" tabindex="0" aria-live="polite" aria-atomic="true" aria-label="Image details"> </div>
+</aside>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
+<script src="toggleAria.js"></script> 
+<script>
+var	$parent = $("#main"),
+		$aside = $("#aside"),
+		$asideTarget = $aside.find(".aside--details"),
+		$asideClose = $aside.find(".close"),
+		$tilesParent = $(".tiles-a"),
+		$tiles = $tilesParent.find("a"),
+		slideClass = "show-detail";
+
+		// tile click
+		$tiles.on("click", function(e){
+			e.preventDefault();
+			e.stopPropagation();
+			if(!$("html").hasClass(slideClass)){
+				$tiles.removeClass("active");
+				$(this).addClass("active");
+				$(this).attr("aria-expanded","true");
+				loadTileData($(this));
+			}else{
+				killAside();
+				$(this).attr("aria-expanded","false");
+			}
+		});
+
+		// kill aside
+		$asideClose.on("click", function(e){
+			e.preventDefault();
+			killAside();
+		});
+
+		// load data to aside
+		function loadTileData(target){
+			var $this = $(target),
+					itemHtml = $this.find(".details").html();
+					$asideTarget.html(itemHtml);
+					showAside();
+		}
+
+		// show/hide aside
+		function showAside(){
+			if(!$("html").hasClass(slideClass)){
+				$("html").toggleClass(slideClass);
+				$aside.attr("aria-hidden","false");
+				focusCloseButton();
+			}
+		}
+		
+		// handle esc key
+		window.addEventListener("keyup", function(e){
+
+			// grab key pressed
+			var code = (e.keyCode ? e.keyCode : e.which);
+			
+			// escape
+			if(code === 27){
+				killAside();
+			}
+
+		}, false);
+
+		// kill aside
+		function killAside(){
+			if($("html").hasClass(slideClass)){
+				$("html").removeClass(slideClass);
+				sendFocusBack();
+				$aside.attr("aria-hidden","true");
+				$tiles.attr("aria-expanded","false");
+			}
+		}
+
+		// send focus to close button
+		function focusCloseButton(){
+			$asideClose.focus();	
+		}
+
+		// send focus back to item that triggered event
+		function sendFocusBack(){
+			$(".active").focus();
+		}
+
+		// handle body click to close off-canvas
+		$parent.on("click",function(e){
+			if($("html").hasClass(slideClass)){
+				killAside();
+			}
+		});
+</script> 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
